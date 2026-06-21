@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Shapes</title>
+
+<style>
+body{
+    background:#eeeeee;
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+    padding:20px;
+    font-family:Arial,sans-serif;
+}
+
+.shape{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    padding-top:20px;
+    color:white;
+    font-size:22px;
+    font-weight:bold;
+}
+
+/* Leaf */
+.leaf{
+    width:150px;
+    height:180px;
+    background:#19b5e8;
+    border-radius:0 100% 0 100%;
+}
+
+/* Half Oval */
+.halfoval{
+    width:300px;
+    height:150px;
+    background:blue;
+    border-radius:0 0 150px 150px;
+}
+
+/* Oval */
+.oval{
+    width:300px;
+    height:180px;
+    background:orange;
+    border-radius:50%;
+}
+
+/* Twist */
+.twist{
+    width:390px;
+    height:180px;
+    background:green;
+    border-radius:0 100% 0 100%;
+    transform:skewX(15deg);
+}
+
+/* Twist Two */
+.twist2{
+    width:390px;
+    height:180px;
+    background:purple;
+    border-radius:0 100px 0 100px;
+}
+
+/* Circle */
+.circle{
+    width:180px;
+    height:180px;
+    background:deeppink;
+    border-radius:50%;
+}
+
+/* Tab */
+.tab{
+    width:170px;
+    height:180px;
+    background:#19b5e8;
+    border-radius:0 0 85px 85px;
+}
+
+/* Three Sided */
+.threesided{
+    width:180px;
+    height:180px;
+    background:blue;
+    border-radius:0 90px 90px 90px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="shape leaf">Leaf</div>
+
+<div class="shape halfoval">Half Oval</div>
+
+<div class="shape oval">Oval</div>
+
+<div class="shape twist">Twist</div>
+
+<div class="shape twist2">Twist Two</div>
+
+<div class="shape circle">Circle</div>
+
+<div class="shape tab">Tab</div>
+
+<div class="shape threesided">Three Sided</div>
+
+</body>
+</html>
