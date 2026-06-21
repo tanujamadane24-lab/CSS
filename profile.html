@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        /* Base Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Center the card on the screen */
+        body {
+            background-color: #a8e6ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Main Card Container */
+        .card {
+            background-color: #dcf5ff;
+            width: 580px;
+            padding: 40px;
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        /* Decorative Top-Right Blue Circle */
+        .bg-circle {
+            position: absolute;
+            top: -60px;
+            right: -60px;
+            width: 220px;
+            height: 220px;
+            background-color: #5c7cfa;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        /* Layer content above the background circle */
+        .card-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Header Layout (Avatar + Name) */
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            margin-bottom: 25px;
+        }
+
+        /* Profile Picture */
+        .avatar {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            border: 5px solid white;
+            object-fit: cover;
+        }
+
+        /* Typography Styles */
+        .name-info h1 {
+            font-size: 32px;
+            font-weight: 800;
+            color: #1a1a1a;
+            line-height: 1.2;
+        }
+
+        .name-info .handle {
+            color: #4a4a4a;
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 4px;
+        }
+
+        .bio {
+            font-size: 18px;
+            color: #4a4a4a;
+            margin-bottom: 35px;
+            max-width: 95%;
+            line-height: 1.4;
+        }
+
+        /* Stats Section Layout */
+        .stats {
+            display: flex;
+            gap: 45px;
+            margin-bottom: 35px;
+        }
+
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .count {
+            font-size: 24px;
+            font-weight: 800;
+            color: #1a1a1a;
+        }
+
+        .label {
+            font-size: 16px;
+            font-weight: 600;
+            color: #4a4a4a;
+            margin-top: 2px;
+        }
+
+        /* Buttons Layout */
+        .actions {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 12px 35px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        /* Follow Button Style */
+        .follow {
+            background-color: #1a1a1a;
+            color: white;
+            border: none;
+        }
+
+        /* View Profile Button Style */
+        .profile {
+            background-color: transparent;
+            border: 2px solid #1a1a1a;
+            color: #1a1a1a;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- Background Accent Geometric Shape -->
+        <div class="bg-circle"></div>
+        
+        <div class="card-content">
+            <!-- Profile Info Header Row -->
+            <div class="header">
+                <!-- Replace src url with your local image file if needed -->
+                <img src="./Screenshot 2026-06-21 125402.png" alt="Bradley Steve" class="avatar">
+                <div class="name-info">
+                    <h1>TANUJA MADANE</h1>
+                    <p class="handle">@tanumadane</p>
+                </div>
+            </div>
+
+            <!-- Profile Summary Bio Text -->
+            <p class="bio">I'm a Front End Developer, follow me to be the first who see my new work.</p>
+
+            <!-- Metrics Numerical Summary Blocks -->
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="count">15K</span>
+                    <span class="label">Views</span>
+                </div>
+                <div class="stat-item">
+                    <span class="count">82</span>
+                    <span class="label">Projects</span>
+                </div>
+                <div class="stat-item">
+                    <span class="count">1.3M</span>
+                    <span class="label">Followers</span>
+                </div>
+            </div>
+
+            <!-- Interactive Action Button Group -->
+            <div class="actions">
+                <button class="btn follow">Follow</button>
+                <button class="btn profile">View profile</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
